@@ -1,0 +1,531 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0rem;
+}
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2.6rem 0rem 2rem 0rem;
+  margin: 0rem 4rem;
+}
+header .header-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .search {
+  background-color: #075b1b9f;
+  border-radius: 100%;
+  padding: 0.5rem;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+header .search:hover {
+  background-color: #00D24A;
+}
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  border: solid #03AD3D 0.1rem;
+  border-radius: 4rem;
+  padding: 0.4rem 0rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0rem 1.5rem;
+}
+header nav ul li a:hover {
+  font-weight: 700;
+}
+header nav input {
+  padding: 0.3125rem;
+  border-radius: 0.3125rem;
+  border: none;
+  margin-right: 0.625rem;
+}
+#castle {
+  background-image: url("img/castlevania.webp");
+}
+#onepiece {
+  background-image: url("img/one piece.webp");
+}
+#codegeass {
+  background-image: url("img/code geass.webp");
+}
+#hajimenoippo {
+  background-image: url("img/hajime no ippo.webp");
+}
+.carousel1 {
+  position: relative;
+  height: 41rem;
+  overflow: hidden;
+  margin: 0rem 4rem 6rem;
+}
+.carousel1 .carousel-item1 {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 38rem;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carousel1 .carousel-item1.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.carousel1 .carousel-content1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .carousel1 .carousel-content1 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.carousel-control1 {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 2rem;
+  background-color: rgba(19, 107, 19, 0.677);
+  color: #fff;
+  border: solid 0.25rem black;
+  width: 4.4rem;
+  height: 4.4rem;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.carousel-control1.prev {
+  left: 10px;
+}
+.carousel-control1.next {
+  right: 10px;
+}
+.carousel-control1:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.carousel-control1 .icon1 {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  font-size: 1.5rem;
+}
+.carousel-indicators1 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.carousel-indicators1 .indicator1 {
+  width: 15px;
+  height: 15px;
+  background-color: #ababab;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.carousel-indicators1 .indicator1.active {
+  background-color: #00D24A;
+}
+.carousel-indicators1 .indicator1:hover {
+  background-color: #fff;
+}
+.text-section1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 400px;
+  text-align: left;
+}
+.image-section1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.image-section1 img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+.tags1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.tags1 .tag1,
+.tags1 .rating1 {
+  background-color: #00D24A;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+.tags1 .rating1 {
+  color: #e7dc1b;
+}
+#onepiece1 {
+  background-image: url("img/one piece.webp");
+}
+#codegeass2 {
+  background-image: url("img/code geass.webp");
+}
+#hajimenoippo3 {
+  background-image: url("img/hajime no ippo.webp");
+}
+.carousel2 {
+  position: relative;
+  height: 41rem;
+  overflow: hidden;
+  margin: 0rem 4rem 6rem;
+}
+.carousel2 .carousel-item2 {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  height: 38rem;
+  border-radius: 1rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.carousel2 .carousel-item2.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.carousel2 .carousel-content2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .carousel2 .carousel-content2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+.carousel-indicators2 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 15px;
+}
+.carousel-indicators2 .indicator2 {
+  width: 15px;
+  height: 15px;
+  background-color: #ababab;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+.carousel-indicators2 .indicator2.active {
+  background-color: #00D24A;
+}
+.carousel-indicators2 .indicator2:hover {
+  background-color: #fff;
+}
+.text-section2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 400px;
+  text-align: left;
+}
+.image-section2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.image-section2 img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+button,
+.watch-now,
+.see-more {
+  padding: 0.625rem 1.25rem;
+  background-color: #075b1b9f;
+  border: none;
+  border-radius: 0.3125rem;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+button:hover,
+.watch-now:hover,
+.see-more:hover {
+  background-color: #009f38;
+}
+.button2 {
+  background-color: #075b1b9f;
+  border: solid #03AD3D 0.1rem;
+  border-radius: 100%;
+  cursor: pointer;
+  color: #fff;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+  width: 3rem;
+  height: 3rem;
+}
+.button2:hover {
+  background-color: #009f38;
+}
+.see-more {
+  border: solid #03AD3D 0.1rem;
+  border-radius: 1rem;
+  width: 90%;
+  padding: 1.5rem 0;
+  margin: 3rem auto;
+  /* Centre le bouton horizontalement */
+  display: block;
+  /* S'assure que le bouton prend toute la largeur spécifiée */
+  text-align: center;
+  /* Aligne le texte à l'intérieur du bouton */
+}
+.titlebox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.titlebox2 {
+  gap: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.special-for-you,
+.feature-collection,
+.newly-added {
+  margin: 0rem 4rem 4rem 4rem;
+}
+.trending {
+  margin: 0rem 4rem;
+}
+.anime-grid,
+.collection-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.8rem;
+}
+.anime-grid .anime-item img,
+.collection-grid .anime-item img,
+.anime-grid .collection-item img,
+.collection-grid .collection-item img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.625rem;
+}
+.anime-grid .anime-item p,
+.collection-grid .anime-item p,
+.anime-grid .collection-item p,
+.collection-grid .collection-item p {
+  font-size: 0.8rem;
+}
+.anime-grid .anime-item img,
+.collection-grid .anime-item img {
+  width: 13.5rem;
+  height: 19.75rem;
+}
+.anime-grid .collection-item img,
+.collection-grid .collection-item img {
+  width: 24rem;
+}
+.anime-grid .collection-item,
+.collection-grid .collection-item {
+  border: solid #03AD3D 0.1rem;
+  border-radius: 1rem;
+  background-color: #03240b6b;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+}
+.collection-grid {
+  margin-top: 2rem;
+}
+.anime-grid {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0rem 6rem 0rem 6rem;
+}
+.white-line {
+  border: none;
+  border-top: 1px solid #6f6f6f;
+  width: 100%;
+  margin: 1rem 0;
+}
+footer {
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0rem 4rem;
+}
+footer .footer-links a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: #6f6f6f;
+}
+footer .footer-icons img {
+  width: 3rem;
+  height: auto;
+  margin-right: 0.625rem;
+}
+footer .footerleftpart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5rem;
+}

@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeFlux</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/animeflix icon.png" type="image/x-icon">
+</head>
+<body>
+
+    <header>
+        <div class="logo"><img src="img/animeflix.webp" alt="Logo" width="180rem"></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Catalog</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Collections</a></li>
+                <li><a href="#"><button class="search"><img src="img/search.webp" alt="Search" width="20rem"></button></a></li>
+            </ul>
+        </nav>
+        <div class="header-icons">
+            <img src="img/notif.webp" alt="Notification">
+            <img src="img/user.webp" alt="User">
+        </div>
+    </header>
+
+    <main>
+        <div class="carousel1">
+            <div class="carousel-item1 active" id="castle">
+                <div class="carousel-content1">
+                    <div class="text-section1">
+                        <img src="img/castlevania logo.webp" alt="Castlevania Logo" class="anime-logo">
+                        <p class="anime-description">A vampire hunter fights to save a besieged city from an army of otherworldly creatures controlled by Dracula.</p>
+                        <div class="tags1">
+                            <span class="tag1">Action</span>
+                            <span class="tag1">Adventure</span>
+                            <span class="rating1">★★★☆☆</span>
+                        </div>
+                        <button class="watch-now1">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item1" id="onepiece">
+                <div class="carousel-content1">
+                    <div class="text-section1">
+                        <img src="img/one piece Logo.webp" alt="Castlevania Logo" class="anime-logo">
+                        <p class="anime-description">Monkey D. Luffy and his crew as they search for the legendary treasure while seeking adventure and friendship.</p>
+                        <div class="tags1">
+                            <span class="tag1">Action</span>
+                            <span class="tag1">Adventure</span>
+                            <span class="rating1">★★★★☆</span>
+                        </div>
+                        <button class="watch-now1">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item1" id="codegeass">
+                <div class="carousel-content1">
+                    <div class="text-section1">
+                        <img src="img/code geass logo.webp" alt="Castlevania Logo" class="anime-logo">
+                        <p class="anime-description">Lelouch vi Britannia, a prince with the power of Geass, as he leads a rebellion against an oppressive empire.</p>
+                        <div class="tags1">
+                            <span class="tag1">Action</span>
+                            <span class="tag1">Adventure</span>
+                            <span class="rating1">★★★★★</span>
+                        </div>
+                        <button class="watch-now1">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item1" id="hajimenoippo">
+                <div class="carousel-content1">
+                    <div class="text-section1">
+                        <img src="img/hajime no ippo Logo.webp" alt="hajime no ippo Logo" class="anime-logo">
+                        <p class="anime-description">Ippo Makunouchi, a shy teen who becomes a boxer and strives to become a champion.</p>
+                        <div class="tags1">
+                            <span class="tag1">Action</span>
+                            <span class="tag1">Sport</span>
+                            <span class="rating1">★★★★★</span>
+                        </div>
+                        <button class="watch-now1">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="carousel-control1" onclick="prevSlide()">
+                <span class="icon1">&#10094;</span>
+              </button>
+              
+              <button class="carousel-control1" onclick="nextSlide()">
+                <span class="icon1">&#10095;</span>
+              </button>
+
+            <div class="carousel-indicators1">
+                <span class="indicator1 active" data-slide="0" onclick="goToSlide(0)"></span>
+                <span class="indicator1" data-slide="1" onclick="goToSlide(1)"></span>
+                <span class="indicator1" data-slide="2" onclick="goToSlide(2)"></span>
+                <span class="indicator1" data-slide="3" onclick="goToSlide(3)"></span>
+            </div>
+        </div>
+
+        <section class="special-for-you">
+            <div class="titlebox">
+                <h2>Special For You</h2>
+                <div class="swipe">
+                    <button class="button2">&#10095;</button>
+                    <button class="button2">&#10094;</button>
+                </div>
+            </div>
+            <div class="anime-grid">
+                <div class="anime-item">
+                    <img src="img/chainsaw man.webp" alt="Chainsaw Man">
+                    <p>Chainsaw Man</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/tokyo revengers.webp" alt="Tokyo Revengers">
+                    <p>Tokyo Revengers</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/death note.webp" alt="Death Note">
+                    <p>Death Note</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/jujutsu kaisen.webp" alt="Jujutsu Kaisen">
+                    <p>Jujutsu Kaisen</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/gangsta anime.webp" alt="Gangsta">
+                    <p>Gangsta</p>
+                    <p>Sub | Dub</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-collection">
+            <h2>Feature Collection</h2>
+            <div class="collection-grid">
+                <div class="collection-item">
+                    <h3>The Best<br> Action Anime</h3>
+                    <img src="img/action.webp" alt="Action Anime">
+                </div>
+                <div class="collection-item">
+                    <h3>The Best<br> Romance Anime</h3>
+                    <img src="img/romance.webp" alt="Romance Anime">
+                </div>
+                <div class="collection-item">
+                    <h3>Top 20<br> Horror Anime</h3>
+                    <img src="img/horreur.webp" alt="Horror Anime">
+                </div>
+            </div>
+        </section>
+
+        <section class="newly-added">
+            <div class="titlebox">
+                <h2>Newly Added</h2>
+                <div class="swipe">
+                    <button class="button2">&#10095;</button>
+                    <button class="button2">&#10094;</button>
+                </div>
+            </div>
+            <div class="anime-grid">
+                <div class="anime-item">
+                    <img src="img/skip to loafer.webp" alt="New Anime 1">
+                    <p>Skip and Loafer</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/mercury.webp" alt="New Anime 2">
+                    <p>The Witch from Mercury</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/zom 100.webp" alt="New Anime 3">
+                    <p>Zom 100</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/jujutsu kaisen.webp" alt="New Anime 4">
+                    <p>Jujutsu Kaisen</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/buddy daddies.webp" alt="New Anime 5">
+                    <p>Buddy Daddies</p>
+                    <p>Sub | Dub</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="carousel2">
+            <div class="carousel-item2 active" id="onepiece">
+                <div class="carousel-content2">
+                    <div class="text-section2">
+                        <img src="img/one piece Logo.webp" alt="Castlevania Logo" class="anime-logo">
+                        <p class="anime-description">Monkey D. Luffy and his crew as they search for the legendary treasure while seeking adventure and friendship.</p>
+                        <button class="watch-now2">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item2" id="codegeass">
+                <div class="carousel-content2">
+                    <div class="text-section2">
+                        <img src="img/code geass logo.webp" alt="Castlevania Logo" class="anime-logo">
+                        <p class="anime-description">Lelouch vi Britannia, a prince with the power of Geass, as he leads a rebellion against an oppressive empire.</p>
+                        <button class="watch-now2">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-item2" id="hajimenoippo">
+                <div class="carousel-content2">
+                    <div class="text-section2">
+                        <img src="img/hajime no ippo Logo.webp" alt="hajime no ippo Logo" class="anime-logo">
+                        <p class="anime-description">Ippo Makunouchi, a shy teen who becomes a boxer and strives to become a champion.</p>
+                        <button class="watch-now2">Watch Now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="carousel-indicators2">
+                <span class="indicator2 active" data-slide="0" onclick="goToSlide(0)"></span>
+                <span class="indicator2" data-slide="1" onclick="goToSlide(1)"></span>
+                <span class="indicator2" data-slide="2" onclick="goToSlide(2)"></span>
+            </div>
+        </div>
+
+
+
+        <section class="trending">
+            <div class="titlebox2">
+                <h2>Trending</h2>
+                <h2>Most Popular</h2>
+                <h2>Newly Added</h2>
+            </div>
+            
+            <hr class="white-line">
+
+            <div class="anime-grid">
+                <div class="anime-item">
+                    <img src="img/blue lock.webp" alt="Blue Lock">
+                    <p>Blue Lock</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/demon slayer.webp" alt="Demon Slayer">
+                    <p>Demon Slayer</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/birdie wing.webp" alt="Birdie Wing">
+                    <p>Birdie Wing</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/rurount kenshin.webp" alt="Rurouni Kenshin">
+                    <p>Rurouni Kenshin</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/the fire hunter.webp" alt="The fire hunter">
+                    <p>The fire hunter</p>
+                    <p>Sub | Dub</p>
+                </div>
+
+                <div class="anime-item">
+                    <img src="img/golden kamuy.webp" alt="Golden kamuy">
+                    <p>Golden kamuy</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/bleach.webp" alt="Bleach">
+                    <p>Bleach</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/mashle.webp" alt="Mashle">
+                    <p>Mashle: Magic and Muscles</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/wakfu.webp" alt="Wakfu">
+                    <p>Wakfu</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/glasses girl.webp" alt="The Girl I Like forget Her Glasses">
+                    <p>The Girl I Like forget Her Glasses</p>
+                    <p>Sub | Dub</p>
+                </div>
+
+                <div class="anime-item">
+                    <img src="img/dead mount deathplay.webp" alt="Dead Mount Deathplay">
+                    <p>Dead Mount Deathplay</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/fairies album.webp" alt="Fairies Album">
+                    <p>Fairies Album</p>
+                    <p>Sub | Dub</p>
+                </div>
+                <div class="anime-item">
+                    <img src="img/akuma kun.webp" alt="Akuma Kun">
+                    <p>Akuma Kun</p>
+                    <p>Sub | Dub</p>
+                </div>
+            </div>
+            <button class="see-more">See more</button>
+            <hr class="white-line">
+        </section>
+
+        
+
+    </main>
+
+    <footer>
+        <div class="footerleftpart">
+            <div class="logo"><img src="img/animeflix.webp" alt="Logo" width="200px"></div>
+            <div class="footer-links">
+                <a href="#">Disclaimer</a>
+                <a href="#">Request</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+        <div class="footer-icons">
+            <img src="img/telegram-icon.webp" alt="Telegram">
+            <img src="img/discord-icon.webp" alt="Discord">
+            <img src="img/youtube-icon.webp" alt="YouTube">
+            <img src="img/instagram-icon.webp" alt="Instagram">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
