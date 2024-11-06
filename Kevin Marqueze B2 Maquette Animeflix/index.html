@@ -46,7 +46,7 @@
             <div class="carousel-item1" id="onepiece">
                 <div class="carousel-content1">
                     <div class="text-section1">
-                        <img src="img/one piece Logo.webp" alt="Castlevania Logo" class="anime-logo">
+                        <img src="img/one piece Logo.webp" alt="one piece Logo" class="anime-logo">
                         <p class="anime-description">Monkey D. Luffy and his crew as they search for the legendary treasure while seeking adventure and friendship.</p>
                         <div class="tags1">
                             <span class="tag1">Action</span>
@@ -61,7 +61,7 @@
             <div class="carousel-item1" id="codegeass">
                 <div class="carousel-content1">
                     <div class="text-section1">
-                        <img src="img/code geass logo.webp" alt="Castlevania Logo" class="anime-logo">
+                        <img src="img/code geass logo.webp" alt="code geass Logo" class="anime-logo">
                         <p class="anime-description">Lelouch vi Britannia, a prince with the power of Geass, as he leads a rebellion against an oppressive empire.</p>
                         <div class="tags1">
                             <span class="tag1">Action</span>
@@ -88,11 +88,11 @@
                 </div>
             </div>
             
-            <button class="carousel-control1" onclick="prevSlide()">
+            <button class="carousel-control1" id="left" onclick="prevSlide()">
                 <span class="icon1">&#10094;</span>
               </button>
               
-              <button class="carousel-control1" onclick="nextSlide()">
+              <button class="carousel-control1" id="right" onclick="nextSlide()">
                 <span class="icon1">&#10095;</span>
               </button>
 
@@ -197,17 +197,20 @@
         </section>
 
         <div class="carousel2">
-            <div class="carousel-item2 active" id="onepiece">
+            <div class="carousel-item2 active">
                 <div class="carousel-content2">
                     <div class="text-section2">
-                        <img src="img/one piece Logo.webp" alt="Castlevania Logo" class="anime-logo">
+                        <img src="img/one piece Logo.webp" alt="one piece Logo" class="anime-logo">
                         <p class="anime-description">Monkey D. Luffy and his crew as they search for the legendary treasure while seeking adventure and friendship.</p>
                         <button class="watch-now2">Watch Now</button>
                     </div>
                 </div>
+                <div>
+                    <img src="img/one piece.webp" alt="Castlevania Logo" class="anime-logo">
+                </div>
             </div>
-
-            <div class="carousel-item2" id="codegeass">
+        
+            <div class="carousel-item2">
                 <div class="carousel-content2">
                     <div class="text-section2">
                         <img src="img/code geass logo.webp" alt="Castlevania Logo" class="anime-logo">
@@ -215,9 +218,12 @@
                         <button class="watch-now2">Watch Now</button>
                     </div>
                 </div>
+                <div>
+                    <img src="img/code geass.webp" alt="code geass Logo" class="anime-logo">
+                </div>
             </div>
-
-            <div class="carousel-item2" id="hajimenoippo">
+        
+            <div class="carousel-item2">
                 <div class="carousel-content2">
                     <div class="text-section2">
                         <img src="img/hajime no ippo Logo.webp" alt="hajime no ippo Logo" class="anime-logo">
@@ -225,12 +231,15 @@
                         <button class="watch-now2">Watch Now</button>
                     </div>
                 </div>
+                <div>
+                    <img src="img/hajime no ippo.webp" alt="Castlevania Logo" class="anime-logo">
+                </div>
             </div>
-
+        
             <div class="carousel-indicators2">
-                <span class="indicator2 active" data-slide="0" onclick="goToSlide(0)"></span>
-                <span class="indicator2" data-slide="1" onclick="goToSlide(1)"></span>
-                <span class="indicator2" data-slide="2" onclick="goToSlide(2)"></span>
+                <span class="indicator2 active" data-slide="0" onclick="goToSlide2(0)"></span>
+                <span class="indicator2" data-slide="1" onclick="goToSlide2(1)"></span>
+                <span class="indicator2" data-slide="2" onclick="goToSlide2(2)"></span>
             </div>
         </div>
 
@@ -324,7 +333,7 @@
 
     <footer>
         <div class="footerleftpart">
-            <div class="logo"><img src="img/animeflix.webp" alt="Logo" width="200px"></div>
+            <div class="logo"><img src="img/animeflix.webp" alt="Logo" width="200rem"></div>
             <div class="footer-links">
                 <a href="#">Disclaimer</a>
                 <a href="#">Request</a>

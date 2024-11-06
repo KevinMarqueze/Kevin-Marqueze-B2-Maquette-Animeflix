@@ -37,6 +37,48 @@ function goToSlide(index) {
 
 showSlide(currentSlide);
 
+
+let currentSlide2 = 0;
+const indicators2 = document.querySelectorAll('.indicator2');
+const slides2 = document.querySelectorAll('.carousel-item2');
+
+function showSlide2(index) {
+    slides2.forEach((slide, i) => {
+        if (i === index) {
+            slide.classList.add('active');
+            slide.style.transition = 'transform 0.8s ease, opacity 0.8s ease';
+            slide.style.opacity = 1;
+            slide.style.transform = 'scale(1) rotate(0deg)';
+        } else {
+            slide.classList.remove('active');
+            slide.style.opacity = 0;
+            slide.style.transform = 'scale(0.9) rotate(-30deg)';
+        }
+        if (indicators2[i]) {
+            indicators2[i].classList.toggle('active', i === index);
+        }
+    });
+}
+
+function nextSlide2() {
+    currentSlide2 = (currentSlide2 + 1) % slides2.length;
+    showSlide2(currentSlide2);
+}
+
+function prevSlide2() {
+    currentSlide2 = (currentSlide2 - 1 + slides2.length) % slides2.length;
+    showSlide2(currentSlide2);
+}
+
+function goToSlide2(index) {
+    currentSlide2 = index;
+    showSlide2(currentSlide2);
+}
+
+// Initialisation du premier slide
+showSlide2(currentSlide2);
+
+
 document.querySelectorAll('.anime-item').forEach(item => {
     item.addEventListener('mouseover', () => {
         item.style.transform = 'translateY(-10px) scale(1.05)';

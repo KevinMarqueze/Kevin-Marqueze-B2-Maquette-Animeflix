@@ -1,9 +1,5 @@
-@base-padding: 1.25rem;
 @base-margin: 0rem 4rem;
 @base-radius: 0.3125rem;
-@font-size-mini: 0.8rem;
-@font-size-small: 1.1rem;
-@font-size-medium: 1.5rem;
 @font-size-large: 3rem;
 @bg-color: #000;
 @text-color: #fff;
@@ -61,7 +57,7 @@ header {
       li a {
         color: @text-color;
         text-decoration: none;
-        font-size: @font-size-small;
+        font-size: 1.1rem;
         padding: 0rem 1.5rem;
 
         &:hover {
@@ -95,9 +91,8 @@ header {
   .carousel-item1 {
     display: none;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: flex-start;     // Alignement horizontal à gauche
+    justify-content: center;      // Centrage vertical
     height: 38rem;
     border-radius: 1rem;
     background-repeat: no-repeat;
@@ -107,21 +102,63 @@ header {
     &.active {
       display: flex;
     }
+
+    img {
+      width: 35rem;
+    }
+}
+
   }
 
   .carousel-content1 {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
+    justify-content: flex-start;  
+    margin: 8rem;
+  } 
 
-    @media (min-width: 768px) {
-      flex-direction: row;
-    }
+  #left{
+    left: 1rem;
   }
-}
+  
+  #right{
+    right: 1rem;
+  }
+
+  .text-section1 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+  
+    p {
+        width: 60%;
+        margin: 1rem;
+    }
+      
+        .watch-now1 {
+        background-color: @highlight-color;
+        border: @highlight-border;
+      }
+    }
+  
+  .tags1 {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  
+    .tag1 {
+      background-color: rgba(19, 151, 19, 0.175);
+      border: @highlight-border;
+      padding: 0.3rem 0.6rem;
+      border-radius: 1rem;
+      color: #03AD3D;
+    }
+  
+    .rating1 { color: rgb(231, 220, 27); }
+  }
+
+  
 
 .carousel-control1 {
   position: absolute;
@@ -147,7 +184,7 @@ header {
 
   .icon1 {
     transform: rotate(-45deg);
-    font-size: @font-size-medium;
+    font-size: 1.5rem;
   }
 }
 
@@ -172,54 +209,19 @@ header {
   }
 }
 
-.text-section1 {
-  flex: 1;
-  max-width: 400px;
-  text-align: left;
-}
-
-.image-section1 {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  img {
-    max-width: 100%;
-    border-radius: 10px;
-  }
-}
-
-.tags1 {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 20px;
-
-  .tag1, .rating1 {
-    background-color: @secondary-color;
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-
-  .rating1 { color: rgb(231, 220, 27); }
-}
 
 
 
 
-#onepiece1 { background-image: url("img/one piece.webp"); }
-#codegeass2 { background-image: url("img/code geass.webp"); }
-#hajimenoippo3 { background-image: url("img/hajime no ippo.webp"); }
 
 .carousel2 {
   position: relative;
-  height: 41rem;
   overflow: hidden;
   margin: @base-margin 6rem;
 
   .carousel-item2 {
     display: none;
-    flex-direction: column;
+    flex-direction:row;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -232,6 +234,10 @@ header {
     &.active {
       display: flex;
     }
+
+    img {
+      width: 50rem;
+    }
   }
 
   .carousel-content2 {
@@ -241,10 +247,15 @@ header {
     justify-content: center;
     gap: 20px;
     padding: 20px;
+    margin: 0rem 10rem 0rem 0rem;
 
-    @media (min-width: 768px) {
-      flex-direction: row;
+    img {
+      width: 35rem;
     }
+
+    .watch-now2 {
+      margin: 5rem 0rem 0rem 13rem;
+  }
   }
 }
 
@@ -273,26 +284,14 @@ header {
   flex: 1;
   max-width: 400px;
   text-align: left;
-}
 
-.image-section2 {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  img {
-    max-width: 100%;
-    border-radius: 10px;
+  .watch-now2 {
+    background-color: @highlight-color;
+    border: @highlight-border;
   }
 }
 
-
-
-
-
-
-button, .watch-now, .see-more {
+button, .see-more {
   padding: 0.625rem 1.25rem;
   background-color: @highlight-color;
   border: none;
@@ -390,10 +389,6 @@ padding: 0rem 6rem 0rem 6rem;
   width: 100%;
   margin: 1rem 0;
 }
-
-
-
-
 
 footer {
   padding: 2rem;
